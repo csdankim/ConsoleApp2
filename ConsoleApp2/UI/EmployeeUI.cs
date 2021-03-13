@@ -19,16 +19,16 @@ namespace ConsoleApp2.UI
                 e.Id = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Enter Name = ");
-                e.FullName = Console.ReadLine();
+                e.FullName = Console.ReadLine();         // Error:: Console.ReadLine()    
 
                 Console.Write("Enter Mobile = ");
-                e.Mobile = Console.ReadLine();
+                e.Mobile = Console.ReadLine();             // Error:: Console.ReadLine() 
 
                 Console.Write("Enter Salary = ");
-                e.Salary = Convert.ToDecimal(Console.ReadLine());
+                e.Salary = Convert.ToDecimal(Console.ReadLine());   // Error: Convert.ToDecimal(Console.ReadLine()); 
 
                 Console.Write("Enter Department Name  = ");
-                e.DepartmentName = Console.ReadLine();
+                e.DepartmentName = Console.ReadLine();      // Error:: Console.ReadLine() 
 
                 empCollection[i] = e;
                 Console.WriteLine("Employee no " + (i + 1) + " is added");
